@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+}
+.item {
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Definir tamaños específicos */
+.T1 { grid-column: span 1; }
+.T2 { grid-column: span 2; }
+.T3 { grid-column: span 5; }
+.T4 { grid-column: span 2; grid-row: span 2; }
