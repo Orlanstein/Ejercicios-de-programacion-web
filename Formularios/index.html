@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Columna izquierda: Formulario -->
+        <div class="form-container">
+            <h1>Formulario de Contacto</h1>
+            <form action="#" method="post">
+                <!-- Nombre completo -->
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                </div>
+
+                <!-- Asunto -->
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="presupuesto">Solicitud de presupuesto</option>
+                        <option value="cita-previa">Cita previa</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <!-- Cómo nos has conocido -->
+                <div class="form-group">
+                    <label>¿Cómo nos has conocido?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="conocido" value="redes-sociales" required> Redes sociales</label>
+                        <label><input type="radio" name="conocido" value="recomendacion"> Recomendación</label>
+                        <label><input type="radio" name="conocido" value="busqueda-internet"> Búsqueda en Internet</label>
+                        <label><input type="radio" name="conocido" value="otros"> Otros</label>
+                    </div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+
+                <!-- Aceptar condiciones -->
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        Acepto las condiciones y políticas de privacidad.
+                    </label>
+                </div>
+
+                <!-- Botón de enviar -->
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Columna derecha: Imagen o contenido adicional -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/500" alt="Imagen descriptiva">
+            <p>Este es un espacio para agregar una imagen o contenido adicional.</p>
+        </div>
+    </div>
+</body>
+</html>
